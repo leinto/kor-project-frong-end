@@ -1,0 +1,39 @@
+#login-big-word {
+    font-style: italic;
+    color: rgb(239, 102, 46);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login-titles {
+    font-weight: bold;
+}
+
+.login-form-control {
+    max-width: 300px;
+    margin: 0 auto  
+}
+
+#login-form {
+    text-align: center
+}
+
+.for-empty-use {
+    padding-left: 100px;
+}
+
+#login-button {
+    border: none;
+    background-color: rgb(239, 102, 46);
+    color: white;
+    border-radius: 1px;
+    min-width: 300px;
+}
+
+#signup-button {
+    border: none;
+    background-color: rgb(239, 102, 46);
+    color: white;
+    border-radius: 1px;
+    min-width: 300px;
+}

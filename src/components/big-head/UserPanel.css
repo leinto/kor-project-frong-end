@@ -1,0 +1,76 @@
+.icon-container {
+    padding-bottom: 4px !important;
+    padding-top: 10px !important;
+
+}
+
+#user-icon {
+    font-size: 36px;
+    color: black;
+
+}
+
+#user-info {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.popover-body {
+    background-color: black;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    
+}
+
+.arrow::after {
+    border-bottom-color: black !important;
+}
+
+#popover-username {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+
+}
+
+#popover-role {
+    color: white;
+    text-align: center;
+}
+#popover-date {
+    color: white;
+    text-align: center;
+}
+
+#popover-button-container {
+    background-color: gray;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#left-button {
+    border: none;
+}
+
+#right-button {
+    border: none;
+    color: white;
+}
+
+#right-button-content {
+    text-decoration: none !important;
+    color: black;
+}
+
+#right-button-content :hover {
+    color: black !important;
+}
+
+#middle-empty {
+    padding-left: 100px;
+}

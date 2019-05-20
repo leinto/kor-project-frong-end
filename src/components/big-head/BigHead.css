@@ -1,0 +1,19 @@
+.big-head {
+    background-color: white;
+    color: white;
+    font-size: 10px;
+    border-bottom: solid darkgray;
+}
+
+
+.big-head-title {
+    background-color: rgb(239, 102, 46);
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.big-head-title-text {
+    padding-top: 20px;
+    
+}

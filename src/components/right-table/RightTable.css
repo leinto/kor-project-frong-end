@@ -1,0 +1,13 @@
+#project-submit-button {
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(239, 102, 46);
+    color: white;
+    border-radius: 1px;
+    min-width: 100px;
+}
+
+.project-submit {
+    text-align: right;
+    margin-top: 10px;
+}

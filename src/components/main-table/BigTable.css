@@ -1,0 +1,46 @@
+.inline {
+    display: inline-block;
+}
+
+.float-right {
+    float: right;
+}
+
+.bigtable-bar {
+    height: 50px;
+    background-color: gray; 
+    padding: 10px;
+}
+
+#filter-bar {
+    border: none;
+    display: inline-block;
+    height: 30px;
+}
+#inline-filter-button {
+    display: inline-block;
+    border: none;
+    height: 30px;
+    border: none;
+    background-color: rgb(239, 102, 46);
+    color: white;
+}
+
+#bg-nested-dropdown{
+    background-color: rgb(239, 102, 46);
+    border-color: rgb(239, 102, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.big-table-thead {
+    background-color: lightgray;
+}
+
+.big-table {
+    border: 1px solid lightgray !important;
+}
+
+.new-row {
+    border: 1px solid rgb(239, 102, 46);
+}

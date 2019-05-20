@@ -1,0 +1,39 @@
+#signup-big-word {
+    font-style: italic;
+    color: rgb(239, 102, 46);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.signup-titles {
+    font-weight: bold;
+}
+
+.signup-form-control {
+    max-width: 300px;
+    margin: 0 auto  
+}
+
+#signup-form {
+    text-align: center
+}
+
+.for-empty-use {
+    padding-left: 100px;
+}
+
+#signup-button {
+    border: none;
+    background-color: rgb(239, 102, 46);
+    color: white;
+    border-radius: 1px;
+    min-width: 300px;
+}
+
+#signup-button {
+    border: none;
+    background-color: rgb(239, 102, 46);
+    color: white;
+    border-radius: 1px;
+    min-width: 300px;
+}

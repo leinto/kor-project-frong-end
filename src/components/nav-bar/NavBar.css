@@ -1,0 +1,35 @@
+.side-bar {
+    background-color: black;
+    height: 110vh;
+    max-width: 20vh;
+    padding-top: 15px;
+
+}
+
+.side-bar-button {
+    padding-left: 0 !important
+}
+
+
+.customize-button {
+    border-top-right-radius: 10px;
+    min-width: 55px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.nav-list {
+    color: white;
+}
+
+.nav-list .active {
+    color: orange;
+}
+
+.side-link {
+    color: lightslategray
+}
