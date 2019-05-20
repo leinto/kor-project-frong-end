@@ -10,8 +10,7 @@ class SignupForm extends Component {
         username: '',
         password: '',
         email: '',
-        role: ['pm'],
-        submitted: false
+        role: ['pm']
     }
 
     handleSubmit = () => {
@@ -22,14 +21,12 @@ class SignupForm extends Component {
     }
 
     render() {
-        const { password, submitted } = this.state;
-
         return (
             <div id="signup-form">
                 <div>
                     <h1 id="signup-big-word">Signup</h1>
                 </div>
-                <form name="form" onSubmit={(e) => this.handleSubmit(e)}>
+                <form name="form">
                     <div>
                         <label htmlFor="username" className="signup-titles">Username</label>
                         <input
@@ -50,7 +47,7 @@ class SignupForm extends Component {
                             onChange={(e) => this.handleChange(e)}
                         />
                     </div>
-                    <div className={'form-group' + (submitted && !password ? ' has-error' : '')}>
+                    <div className='form-group'>
                         <label htmlFor="password" className="signup-titles">Password</label>
                         <input
                             type="password"
@@ -59,9 +56,6 @@ class SignupForm extends Component {
                             value={this.state.password}
                             onChange={(e) => this.handleChange(e)}
                         />
-                        {submitted && !password &&
-                            <div className="help-block">Password is required</div>
-                        }
                     </div>
                     <div className="form-group">
                         <button className="btn btn-primary" id="login-button" onClick={this.handleSubmit}>Sign Up</button>

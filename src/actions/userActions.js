@@ -44,7 +44,6 @@ const signup = (username, password, email, role) => {
     }
 }
 
-
 export default {
     login,
     logout,
