@@ -107,18 +107,21 @@ class BigTable extends Component {
         this.props.dispatch(resourceActions.addManyRow(this.state.newResourcesResolved))
         this.props.dispatch(resourceActions.addManyCol(this.state.newAttributesResolved))
     }
-    handleFilter = () => {
-        // let resources = [...this.props.resources]
-        // let searchValue = (this.state.keyword).toLowerCase()
-        // const updatedList = resources.filter((item) => {
-        //     return Object.keys(item).some(key => item[key].toString().search(searchValue) !== -1);
-        // });
+    handleFilterChange = e => this.setState({[e.target.name] : e.target.value})
 
-
-        // console.log(updatedList);
-    }
     render() {
-        const { resources, attributes } = this.props
+        let { resources, attributes } = this.props
+        const resourceFiltered = resources.slice()
+        let resourceRemake = []
+        resourceFiltered.map(resource => {
+            const values = Object.values(resource.resource)
+            values.map(val=> val.includes(this.state.keyword.toLowerCase()) && resourceRemake.indexOf(resource) < 0 
+                ? resourceRemake.push(resource) 
+                : null)
+            return resourceRemake
+        })
+        resources = resourceRemake;
+
         const firstNumber = (this.state.page - 1) * this.state.pageLength
         const lastNumber = this.state.page * this.state.pageLength
         const data = resources.slice(firstNumber, lastNumber)
@@ -165,7 +168,7 @@ class BigTable extends Component {
                         onChange={(e) => this.handleFilterChange(e)}
                         className="inline" 
                         id="filter-bar"/>
-                    <button onClick={this.handleFilter} id="inline-filter-button"><FiSearch /></button>
+                    <button id="inline-filter-button"><FiSearch /></button>
                     <ButtonGroup className="inline float-right">
                         <DropdownButton as={ButtonGroup} title="" id="bg-nested-dropdown" size="sm" >
                             <Dropdown.Item onClick={this.modalShow}>add new column</Dropdown.Item>
