@@ -62,6 +62,7 @@ class BigTable extends Component {
     }
     handleNewRow = () => {
         this.props.dispatch(resourceActions.addNewRow(JSON.stringify(this.newRowResolved)))
+        this.setState({newRowShow: false})
     }
     importCsv = (data) => {
         this.setState({ csvModalShow: false })
